@@ -1,4 +1,3 @@
-# freecodecamp
 # FreeCodeCamp Assignments Repository
 This repository contains the assignments completed during the courses offered by [FreeCodeCamp.org](https://www.freecodecamp.org/). It serves as a central hub for organizing and showcasing the work done throughout the courses.
 
