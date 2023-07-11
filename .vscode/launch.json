@@ -1,0 +1,20 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "vscode-edge-devtools.debug",
+            "request": "launch",
+            "name": "Open tribute.html",
+            "file": "/home/Abhishek/E_drive/languages/freecodecamp/responsive_web_design/Project-Tribute_page/tribute.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/freecodecamp/responsive_web_design/Project-Tribute_page/tribute.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/freecodecamp/responsive_web_design/Project-Tribute_page/tribute.html"
+        }
+    ]
+}
