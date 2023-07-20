@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Documentation_Page</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Disk Space Management</header>
+        <ul>
+            <li><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+            <li class="sub_cat"><a class="nav-link" href="#windows">Windows</a></li>
+            <li class="sub_cat"><a class="nav-link" href="#linux">linux</a></li>
+            <li class="sub_cat"><a class="nav-link" href="#macos">MacOS</a></li>
+            <li class="sub_cat"><a class="nav-link" href="#android">Android</a></li>
+            <li class="sub_cat"><a class="nav-link" href="#iphone">Iphone</a></li>
+            <li><a class="nav-link" href="some_specific_apps">Some specific apps</a></li>
+            <li><a class="nav-link" href="conclusion">Conclusion</a></li>
+            <li><a class="nav-link" href="references">References/Sources</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <div id="title"><h1>How to keep you disk space "clean"</h1></div>
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <article>
+                Nowadays although the price of storage disks have become significantly lower, at the same time the size of the files keeps on increasing.
+                <br>
+                Managing disk space is essential for maintaining the performance and efficiency of your devices. Over time, your laptop, mobile devices, and other computing devices can accumulate unnecessary files and data, which can lead to storage constraints and sluggish performance. 
+            </article>
+        </section>
+        <section class="main-section" id="What_you_should_already_know">
+            <header>What you should already know</header>
+            <article>
+                Before diving into disk space management, it is helpful to have a basic understanding of your operating system and the file system used on your devices.
+                Additionally, knowing how to navigate through the device's file explorer or terminal will be beneficial.
+            </article>
+        </section>
+        <section class="topic-section" id="laptops">
+            <header>Laptops</header>
+            <p class="desc">
+                Laptops tend to become the devices that are managed is terms of storage.Most people take the large available storage as granted only to realize when the clutter starts hogging down the device.
+            </p>
+        </section>
+        <section class="main-section" id="windows">
+            <header class="device">Windows</header>
+            <article>
+                Let's start with the OS which is most commonly used. <br>
+                There are quite few available utilities for cleaning up un-important files.
+                <h3>Step 1: Erase Temporary junk</h3>
+                <ul>
+                    <li>
+                        <header class="method">Disk Cleanup</header>
+                        <p class="detail">
+                            If you don't mind an old-school interface, the classic Disk Cleanup tool gets the cleaning job done. Access it by typing <b>Disk Cleanup</b> into the Start menu and selecting the disk you want to clean.
+                        </p>
+                        <p>
+                            After a moment, you'll see a list of unnecessary files that Windows can clean up. Assuming you're an administrator, you should first click the <b>Clean up system files</b>
+                            button to scan again for additional types of data.
+                            <div class="img_div">
+                                <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/03/Windows-10-Disk-Cleanup.png?q=50&fit=crop&w=767&dpr=1.5" alt="disc-cleanup">
+                            </div>
+                        </p>
+                        <p>
+                            you can pretty much delete all the files shown here specially cleaning up old windows version can relieve a lot of load on you drive.
+                            <strong>Previous Windows installation(s)</strong>If you've recently updated to a new major version of Windows, you'll see a  entry. 
+                        </p>
+                        <p>
+                            Deleting this will remove the old files that Windows keeps for 10 days—those allow you to easily go back to an earlier version. You should also avoid removing the <strong>Windows ESD installation files</strong> option, as this is used for resetting your PC via Settings.
+                        </p>
+                    </li>
+                    <li>
+                        <header class="method">Storage Sense</header>
+                        <p class="detail">
+                            Windows 10 and Windows 11 both include much of this same functionality of Disk Cleanup, with a nicer interface, at <b>Settings > System > Storage</b>.
+                            You can use the Storage Sense feature found there to automatically clean up files when your disk space is low, or every so often. 
+                            Click <b>Configure Storage Sense or run it now</b>(on Windows 10) to change these options.
+                        </p>
+                        <div class="img_div">
+                            <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/03/Windows-10-Storage-Menu.png?q=50&fit=crop&w=767&dpr=1.5" alt="storage sense" >
+                        </div>
+                        <p class="detail">
+                            In the list of what's using space on your PC, click <b>Temporary files</b> and you can delete the same types of data as in Disk Cleanup. <b>Show more categories </b> provides more info about types of data that aren't using as much space.
+                        </p>
+                    </li>
+                </ul>
+                <h3>Step 2: Delete Large File</h3>
+                <p class="detail">
+                    Now that the unnecessary files are gone it's time to clear up files which are eating up major chunks your space but you don't really need them.
+                    Yes, i am talking about the large files (i know you have at least a 100GB of "movies" there 😏)
+                </p>
+                <ul>
+                    <li>
+                        <header class="method">Big Files</header>
+                        <p class="detail">
+                            To help us with this, download <a href="https://www.jam-software.com/treesize_free">TreeSize Free</a>, which will scan you storage and show you where the biggest files are.
+                        </p>
+                        <p>
+                            Once installed launch it using the (<b>Administrator</b>) so that you can scan everywhere.
+                            To start,<b>Select Directory</b> in the top-left and select the storage you want to free up.
+                        </p>
+                        <div class="img_div">
+                            <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/03/TreeSize-Free-Windows-10.png?q=50&fit=crop&w=767&dpr=1.5" alt="treesize_free" >
+                        </div>
+                        <p class="detail">
+                            After a few moments, you'll see a visual breakdown of your PC's storage, with the largest files at the top. Click the dropdown arrow on any folder to expand by one level.
+                        </p>
+                        <p class="detail">
+                            The largest folders will probably be <strong>Users</strong>, <strong>Windows</strong>, and <strong>Program Files</strong> (and/or <strong>Program Files (x86)</strong>). T
+                            here's not much you can do in the <strong>Windows</strong> directory without causing issues (be aware of <a href="https://www.makeuseof.com/tag/default-windows-files-folders/">Windows folders you should never touch</a>), so let's look at the others.</p>
+                    </li>
+                    <li>
+                        <header class="method">Uninstall </header>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="">
+            <header></header> 
+            <article>
+                <h3></h3>    
+            </article>
+        </section>
+        <section class="main-section" id="">
+            <header></header>
+            <article></article>
+        </section>
+        <section class="main-section" id="">
+            <header></header>
+            <article></article>
+        </section>
+        <section class="main-section" id="">
+            <header></header>
+            <article></article>
+        </section>
+        <section class="main-section" id="">
+            <header></header>
+            <article></article>
+        </section>
+        <section class="main-section" id="">
+            <header></header>
+            <article></article>
+        </section>
+    </main>
+</body>
+</html>

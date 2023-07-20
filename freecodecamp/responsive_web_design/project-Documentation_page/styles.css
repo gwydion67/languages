@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    word-spacing: 3px !important;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 19px;
+    color: #f1f1f1;
+    background-color: #302e3f;
+}
+#main-doc{
+    position: absolute;
+    margin-left: 280px;
+    padding: 7px 15px 7px 25px;
+    line-height: 1.5;
+    
+}
+
+#navbar {
+    position: fixed;
+    min-width: 200px;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 100%;
+    border-right: solid;
+    border-color: #e5f7cf;
+}
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#navbar li{
+    color: #dbdbdb;
+    margin: 4px;
+    font-size: 1.06em;
+    border-top: 1px solid #e5f7cf;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    padding: 10px 20px;
+}
+#navbar li.sub_cat{
+    padding-left: 40px;
+}
+
+h1{
+    font-size: 35px;
+}
+header{
+    font-weight: 700;
+}
+header:not(.method){
+    font-size: 1.6rem;
+}
+header.method{
+    font-size: 1.2rem;
+}
+header.device{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1.3rem;
+}
+
+.img_div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 30px 0;
+}
+img{
+    width: 60%;
+}
+
+p, article{
+    margin: 20px 0;
+}
+
+a{
+    color: #f2f2f2;
+    text-decoration-color: red;
+}
+
+
+@media only screen and (max-width: 815px) {
+/* For mobile phones: */
+#navbar ul {
+    border: 1px solid;
+    height: 207px;
+}
+
+#navbar {
+    background-color: ;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+}
+#navbar ul{
+    border: none;
+}
+
+#main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+}
+}
+
+@media only screen and (max-width: 400px) {
+    #main-doc {
+    margin-left: -10px;
+    }
+
+    code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+    }
+}
