@@ -36,7 +36,7 @@ body{
 #navbar li{
     color: #dbdbdb;
     margin: 4px;
-    font-size: 1.06em;
+    font-size: 0.98em;
     border-top: 1px solid #e5f7cf;
     list-style: none;
     position: relative;
@@ -57,10 +57,10 @@ header:not(.method){
     font-size: 1.6rem;
 }
 header.method{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 header.device{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 h3{
@@ -85,6 +85,26 @@ a{
     color: #f2f2f2;
     text-decoration-color: red;
 }
+#navbar a{
+    text-decoration: none;
+    display: block;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/**************************/
 
 
 @media only screen and (max-width: 815px) {
@@ -95,7 +115,6 @@ a{
 }
 
 #navbar {
-    background-color: ;
     position: absolute;
     top: 0;
     padding: 0;
