@@ -10,11 +10,47 @@ body{
     background-color: #302e3f;
 }
 #main-doc{
-    position: absolute;
+    /*position: absolute;*/
+    position: relative;
     margin-left: 280px;
+    margin-right: 35px;
+    margin-top: 10px;
     padding: 7px 15px 7px 25px;
     line-height: 1.5;
-    
+    border: 1px solid black;
+    height: max-content;
+}
+
+#title{
+    text-align: center;
+    background-color: #05030180;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.code-block{
+    list-style: none;
+    background-color: #2b293b;
+    padding: 10px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width:70%;
+}
+
+#laptops::before{
+    display: inline-block;
+    content: "💻";
+    vertical-align:text-bottom;
+}
+#mobile_devices::before{
+    display: inline-block;
+    content: "📱";
+    vertical-align:text-bottom;
+}
+.device-heading{
+    display: inline;
 }
 
 #navbar {
@@ -54,13 +90,16 @@ header{
     font-weight: 700;
 }
 header:not(.method){
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 header.method{
     font-size: 1.1rem;
 }
 header.device{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+}
+.device::before{
+    content: ">";
 }
 
 h3{
@@ -93,15 +132,17 @@ a{
 code {
     display: block;
     text-align: left;
-    white-space: pre-line;
     position: relative;
     word-break: normal;
     word-wrap: normal;
     line-height: 2;
-    background-color: #f7f7f7;
+    background-color: rgba(30,30,30,50%);
     padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
+    margin: 10px 10px 5px 10px;
+    border-radius: 8px;
+    width: 60%;
+    left: -15px
+
 }
 
 /**************************/
@@ -132,7 +173,8 @@ code {
 #main-doc {
     position: relative;
     margin-left: 0px;
-    margin-top: 270px;
+    margin-top: 300px;
+    margin-right: 7px;
 }
 }
 

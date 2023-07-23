@@ -17,9 +17,9 @@
             <li class="sub_cat"><a class="nav-link" href="#macos">MacOS</a></li>
             <li class="sub_cat"><a class="nav-link" href="#android">Android</a></li>
             <li class="sub_cat"><a class="nav-link" href="#iphone">Iphone</a></li>
-            <li><a class="nav-link" href="some_specific_apps">Some specific apps</a></li>
-            <li><a class="nav-link" href="conclusion">Conclusion</a></li>
-            <li><a class="nav-link" href="references">References/Sources</a></li>
+            <li><a class="nav-link" href="#some_specific_apps">Some specific apps</a></li>
+            <li><a class="nav-link" href="#conclusion">Conclusion</a></li>
+            <li><a class="nav-link" href="#references/sources">References/Sources</a></li>
         </ul>
     </nav>
     <main id="main-doc">
@@ -39,17 +39,18 @@
                 Additionally, knowing how to navigate through the device's file explorer or terminal will be beneficial.
             </article>
         </section>
-        <divt class="topic-section" id="laptops">
-            <header>Laptops</header>
+        <div class="topic-section" id="laptops">
+            <header class="device-heading">Laptops</header>
             <p class="desc">
                 Laptops tend to become the devices that are managed is terms of storage.Most people take the large available storage as granted only to realize when the clutter starts hogging down the device.
             </p>
-        </divt>
         <section class="main-section" id="windows">
             <header class="device">Windows</header>
             <article>
-                Let's start with the OS which is most commonly used. <br>
-                There are quite few available utilities for cleaning up un-important files.
+                <p class="desc">
+                    Let's start with the OS which is most commonly used. <br>
+                    There are quite few available utilities for cleaning up un-important files.
+                </p>
                 <h3>Step 1: Erase Temporary junk</h3>
                 <ul>
                     <li>
@@ -113,37 +114,136 @@
                             here's not much you can do in the <strong>Windows</strong> directory without causing issues (be aware of <a href="https://www.makeuseof.com/tag/default-windows-files-folders/">Windows folders you should never touch</a>), so let's look at the others.</p>
                     </li>
                     <li>
-                        <header class="method">Uninstall </header>
+                        <header class="method">Uninstall Big Programs</header>
+                        <p class="detail">Under <strong>Program Files</strong> (and/or <strong>Program Files (x86)</strong> on 64-bit Windows), you'll find files for most of the apps you have installed. 
+                            If you don't use some of these anymore, head to <strong>Settings &gt; Apps &gt; Apps &amp; features</strong> (on Windows 11, <strong>Settings &gt; Apps &gt; Installed apps</strong>) to uninstall them.
+                        </p>
+                        <div class="img_div">
+                            <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/02/Windows-10-Uninstall-Store-App.png?q=50&fit=crop&w=767&dpr=1.5" alt="uninstall" >
+                        </div>
+                        <p class="detail">
+                            After the big chunks are gone you might want to go a little further and clean the useless bloatware that has come with windows itself.
+                            see for apps that you never use and remove those.
+                        </p>
+                        <div class="img_div">
+                            <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/03/Windows-10-Uninstall-Start-Menu-Apps.png?q=50&fit=crop&w=767&dpr=1.5" alt="bloat" >
+                        </div>
+                    </li>
+                </ul>
+            </article>
+            <p>This concludes our discussion for windows.. most operating systems will have most of these in common and almost all these steps should be similar.
+                Instead lets look what other OS has extra things that we can clean and some methods that are different from the above.
+            </p>
+        </section>
+        <section class="main-section" id="linux">
+            <header class="device">Linux</header>
+            <article>   
+                <p class="desc">
+                    Well for my fellow linux users I highly doubt that they would really need a simple guide for things like space management
+                    still i would like to give some refresher to the basics. 
+                </p>
+                <ul>
+                    <h3>Step 1: Analyze the space usage</h3>
+                    <li>
+                        <header class="method">Disk Usage Analyzer(GUI)</header>
+                        <p class="detail">
+                            OK OK!, stop!, I know GUI is bloat but for be a little lenient on the people who are just starting on their linux journey.
+                        </p>
+                        <p class="detail">
+                            Disk Usage analyzer is a graphical tool that provides a visual representation of the disk usage.
+                            you can head to <a href="https://help.gnome.org/users/baobab/" target="_blank" rel="noopener noreferrer">Disk Usage Analyzer</a> to download the latest version.
+                        </p>
+                        <p class="detail">
+                            I guess i don't really need to explain what to do next.
+                            This is somewhat similar to what we did for windows. 
+                        </p>
+                    </li>
+                    <li>
+                        <header>ncdu(Terminal-based Disk Usage Analyzer)</header>
+                        <p class="detail">
+                            See, I got one for terminal dwellers as well.
+                            ncdu is a powerful terminal-based disk usage analyzer that allow you to check disk usage from the command line.
+                            To install ncdu use you package manager to search for ncdu.
+                            <ul>
+                                <li class="code-block">
+                                    <p>install ncdu(for debian based systems)</p>
+                                    <code>
+                                        Sudo apt-get install ncdu
+                                    </code>
+                                </li>
+                                <li class="code-block">
+                                    <p>Usage: to analyze simply run:</p>
+                                    <code>
+                                        ncdu
+                                    </code>
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+                    <h3>Step 2: Removing unnecessary packages</h3>
+                    <li>
+                        <header class="method">For debian based systems(apt-get)</header>
+                        <p class="detail">
+                            In linux, package managers cache all the downloads and updates. Overtime this can lead to a massive pile.
+                            <ul>
+                                <li class="code-block">
+                                    <p>Update the package and remove orphaned packages:</p>
+                                    <code>
+                                        sudo apt-get update<br>
+                                        sudo apt-get autoremove
+                                    </code>
+                                </li>
+                                <li class="code-block">
+                                    <p>Clean up cached packages</p>
+                                    <code>
+                                        sudo apt-get clean
+                                    </code>
+                                </li>
+                            </ul>
+                        </p>
                     </li>
                 </ul>
             </article>
         </section>
-        <section class="main-section" id="">
-            <header></header> 
+        <section class="main-section" id="macos">
+            <header class="device">MacOs</header>
             <article>
-                <h3></h3>    
+
             </article>
         </section>
-        <section class="main-section" id="">
-            <header></header>
+        </div>
+        <div class="topic-section" id="mobile_devices">
+            <header class="device-heading">Mobile Devices</header>
+            <p class="desc">
+                Mobile devices are the tools which connect us to the whole world and are the most used devices.
+                It's no surprise they suffer from the clutter often.
+            </p>
+        <section class="main-section" id="android">
+            <header class="device">Android</header>
             <article></article>
         </section>
-        <section class="main-section" id="">
-            <header></header>
+        <section class="main-section" id="iphone">
+            <header class="device">Iphone</header>
             <article></article>
         </section>
-        <section class="main-section" id="">
-            <header></header>
+        </div>
+        <section class="main-section" id="some_specific_apps">
+            <header class="device">Some Specific Apps</header>
             <article></article>
         </section>
-        <section class="main-section" id="">
-            <header></header>
-            <article></article>
+        <section class="main-section" id="conclusion">
+            <header>Conclusion</header>
+            <article>
+
+            </article>
         </section>
-        <section class="main-section" id="">
-            <header></header>
-            <article></article>
+        <section class="main-section" id="references/sources">
+            <header>References/Sources</header>
+
         </section>
     </main>
+    <div class="end">
+        sdfsdf
+    </div>
 </body>
 </html>
