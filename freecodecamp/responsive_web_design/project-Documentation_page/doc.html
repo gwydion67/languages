@@ -142,8 +142,8 @@
                     Well for my fellow linux users I highly doubt that they would really need a simple guide for things like space management
                     still i would like to give some refresher to the basics. 
                 </p>
+                <h3>Step 1: Analyze the space usage</h3>
                 <ul>
-                    <h3>Step 1: Analyze the space usage</h3>
                     <li>
                         <header class="method">Disk Usage Analyzer(GUI)</header>
                         <p class="detail">
@@ -159,7 +159,7 @@
                         </p>
                     </li>
                     <li>
-                        <header>ncdu(Terminal-based Disk Usage Analyzer)</header>
+                        <header class="method">ncdu(Terminal-based Disk Usage Analyzer)</header>
                         <p class="detail">
                             See, I got one for terminal dwellers as well.
                             ncdu is a powerful terminal-based disk usage analyzer that allow you to check disk usage from the command line.
@@ -180,32 +180,36 @@
                             </ul>
                         </p>
                     </li>
-                    <h3>Step 2: Removing unnecessary packages</h3>
+                </ul>
+                <h3>Step 2: Removing unnecessary packages</h3>
+                <ul>
                     <li>
                         <header class="method">For debian based systems(apt-get)</header>
                         <p class="detail">
                             In linux, package managers cache all the downloads and updates. Overtime this can lead to a massive pile.
-                            <ul>
-                                <li class="code-block">
-                                    <p>Update the package and remove orphaned packages:</p>
-                                    <code>
-                                        sudo apt-get update<br>
-                                        sudo apt-get autoremove
-                                    </code>
-                                </li>
-                                <li class="code-block">
-                                    <p>Clean up cached packages</p>
-                                    <code>
-                                        sudo apt-get clean
-                                    </code>
-                                </li>
-                            </ul>
                         </p>
+                        <ul>
+                            <li class="code-block">
+                                <p>Update the package and remove orphaned packages:</p>
+                                <code>
+                                    sudo apt-get update<br>
+                                    sudo apt-get autoremove
+                                </code>
+                            </li>
+                            <li class="code-block">
+                                <p>Clean up cached packages</p>
+                                <code>
+                                    sudo apt-get clean
+                                </code>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <header class="method">For dnf package managers(eg. Fedora, CentOS,etc.)</header>
                         <p class="detail">
                             For systems using DNF package managers:
+                        </p>
+                        <ul>
                             <li class="code-block">
                                 <p>Clean the metadata and remove unnecessary packages</p>
                                 <code>
@@ -213,7 +217,7 @@
                                     sudo dnf autoremove
                                 </code>
                             </li>
-                        </p>
+                        </ul>
                     </li>
                 </ul>
             </article>
