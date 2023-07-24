@@ -21,6 +21,16 @@ body{
     height: max-content;
 }
 
+/* 
+**use this to add space below absolute element
+#main-doc:after {
+    position: absolute;
+    content: "";
+    bottom: -40px;
+    height: 40px;
+    width: 1px;
+} */
+
 #title{
     text-align: center;
     background-color: #05030180;
