@@ -6,10 +6,10 @@ This repository serves as a collection of code and files developed during the pr
 
 The repository currently includes the following programming languages:
 
-- JavaScript
-- Golang
-- HTML&CSS
-- WebDevelopment(ongoing)
+- [JavaScript](./scaler_js)
+- [Golang](./Golang)
+- [HTML&CSS](./freecodecamp)
+- [WebDevelopment(ongoing)](./freecodecamp)
 
 Each language has its own dedicated folder within the repository structure. You can explore the code and files in each language-specific folder to find examples, projects, and additional learning resources.
 

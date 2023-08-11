@@ -62,5 +62,3 @@ print(f"{z:,}")
 
 ## round till nearest integer with some precision z = round(x+y,<number of digits after decimal>) 
 ## we could also do print(f"{z:.2f}")
-
-print(__name__)

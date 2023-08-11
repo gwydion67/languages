@@ -2,6 +2,17 @@
     box-sizing: border-box;
 }
 
+body{
+    background: radial-gradient(
+        at top right,
+        black 0%,
+        #539661 2%,
+        rgb(51, 124, 102) 20%,
+        rgb(150, 89, 199) 50%,
+        skyblue 70%
+    )
+}
+
 #nav-bar{
     position: sticky;
     top: 0;
@@ -13,4 +24,9 @@
     grid-template-columns: 50% 50%;
 }
 
+.player{
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+}
 
