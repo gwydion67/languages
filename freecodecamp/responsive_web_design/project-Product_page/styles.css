@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+#header{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
