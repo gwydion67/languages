@@ -3,7 +3,7 @@ def func() :
     name = input("What's you name? \n");
     print(f"hello {name}")
     print("hello," , name)
-    
+    return ("hello" + name)
     
 
 #### func();
@@ -18,7 +18,7 @@ multi line comment
 print("this is print with " , end = "")
 print("no new line")
 
-#! String methods
+#! String method
 string = input("input a string \n");
 hold = string
 
@@ -56,7 +56,7 @@ z = int(x) + int(y)
 print(z)
 
 
-## print integer with formating
+## print integer with format-ing
 
 print(f"{z:,}")
 
