@@ -9,6 +9,5 @@ func main() {
 	log.Println("now myString = ", myString)
 }
 func changeUsingPointer(s *string) {
-	newValue := "Red"
-	*s = newValue
+	*s = "newValue";
 }

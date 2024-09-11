@@ -1,6 +1,8 @@
 package main
 
 import "fmt"
+import "os"
+
 
 func main() {
 	fmt.Println("Hello, World!")
@@ -10,6 +12,8 @@ func main() {
 
 	whatWasSaid, whatElse := saySomething()
 	fmt.Println(whatWasSaid,whatElse)
+
+  fmt.Println(os.Args[1])
 
 }
 

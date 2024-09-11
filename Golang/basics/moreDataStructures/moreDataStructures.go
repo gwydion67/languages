@@ -4,6 +4,12 @@ import (
 	"fmt"
 )
 
+
+type User struct{
+  FistName string
+  LastName string
+}
+
 func main() {
 	var myString string
 	var myInt int
@@ -17,11 +23,23 @@ func main() {
 
 	//var myMap map[string]string
 
-	myMap := make(map[string]string)
+	myMap := make(map[string]User)
 
-	myMap["dog"] = "tommy"
-	myMap["cat"] = "meow"
+	// myMap["dog"] = "tommy"
+	// myMap["cat"] = "meow"
 
-	fmt.Println(myMap, myMap["dog"])
+	// fmt.Println(myMap, myMap["dog"])
+
+  me := User{
+    FistName: "abhishek",
+    LastName: "kumar",
+  }
+
+  myMap["me"] = me
+
+  fmt.Println(myMap)
+
+  var mySlice []string
+  mySlice = append(mySlice, "2")
 
 }
